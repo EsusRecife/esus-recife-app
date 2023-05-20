@@ -29,10 +29,10 @@ Para colocar a aplicação no ar você deve seguir os seguintes passos:
 npm i
 ```
 
-2. Crie um arquivo .env usando:
+2. Inicie o app usando:
 
 ```
-npm start
+npm run dev
 ```
 
 ## 📫 Contribuindo com o projeto
@@ -41,7 +41,7 @@ npm start
 Para contribuir com o alimentação retroativa, siga estas etapas:
 
 1. Clone esse repositório
-2. Crie um branch com o nome informado no cartão do Trello: `git checkout -b <nome_branch>`.
+2. Crie um branch com o nome informado a atividade sendo feita: `git checkout -b <nome_branch>`.
 3. Faça suas alterações e confirme-as: `git commit -m '<tipo_commit>:<mensagem_commit>'`
 
 > Obs.: As mensagens dos commits seguem o padrão convencional de commits, onde:
@@ -57,15 +57,11 @@ Para contribuir com o alimentação retroativa, siga estas etapas:
 
 4. Dê o Push nos seus commits:
 
-    a. Caso seja o primeiro push: `git push --set-upstream origin <nome_branch_criada>`
+    a. Caso seja o primeiro push: `git push origin <nome_branch_criada>`
 
     b. Caso não seja o primeiro push: `git push`
 
-5. Crie o Pull Request com um reviewer e escreva uma descrição breve e clara, informando o que você está fazendo.
-
-   a. Se ainda estiver trabalhando na branch, coloque a label: `WIP`
-
-   b. Se já tiver finalizado, coloque a label: `Code Review`
+5. Crie o Pull Request com um reviewer
 
 >Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
