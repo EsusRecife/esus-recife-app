@@ -1,0 +1,236 @@
+html, body{
+    /*Padrão*/
+    margin: 0;
+    padding: 0;
+    /*Alinhar todo conteúdo no centro*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    /*Estilizar a fonte*/
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.forms{
+    padding: 30px;
+    background: #ECF0F3;
+    box-shadow: -16px -16px 32px rgba(255, 255, 255, 0.64), 16px 16px 32px rgba(0, 0, 0, 0.16);
+    border-radius: 24px;
+    max-width: 383px;
+}
+
+.forms .titletile{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    align-items: center;
+}
+
+.forms .titletile p{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 8px;
+    font-size: 48px;
+    font-weight: bold;
+    /*Estilizar o gradiente na fonte*/
+    background-image: linear-gradient(135deg, #719544 ,#1F3206);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.forms .titletile div{
+    width: 57px;
+    height: 44px;
+    padding: 8px;
+    background: #ECF0F3;
+    box-shadow: -8px -8px 16px rgba(255, 255, 255, 0.64), 8px 8px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.forms form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.forms form .inputtile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 24px;
+}
+
+.forms form .inputtile label{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 8px;
+    /*Estilizar o gradiente na fonte*/
+    background-image: linear-gradient(135deg, #719544 ,#1F3206);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}   
+
+.forms form .inputtile input{
+    width: 323px;
+    height: 67px;
+    left: 807px;
+    top: 398px;
+
+    background: #ECF0F3;
+    border: none;
+    box-shadow: inset -8px -8px 8px rgba(255, 255, 255, 0.56), inset 8px 8px 8px rgba(91, 91, 98, 0.2);
+    border-radius: 16px;
+}
+
+.forms form .submit{
+    width: 312px;
+    height: 48px;
+    left: 808px;
+    top: 621px;
+    border: none;
+    
+    color:#ECF0F3;
+    font-size: 20px;
+    font-weight: 700;
+
+    /*Cor e forma do botão*/
+    background: linear-gradient(117.01deg, #719544 2.25%, #1F3206 117.84%);
+    box-shadow: -8px -8px 16px rgba(255, 255, 255, 0.64), 8px 8px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+}
+
+.forms form .redirectpassword{
+    padding-top: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+
+    background-image: linear-gradient(135deg, #719544 ,#1F3206);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+    background-image: linear-gradient(135deg, #719544 ,#1F3206);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+    background-image: linear-gradient(135deg, #719544 ,#1F3206);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer p{
+    margin: 0;
+    padding-right: 8px;
+}
+
+.title-register {    
+    padding-left: 8px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+
+    font-weight: bold;
+    /*Estilizar o gradiente na fonte*/
+    background-image: linear-gradient(135deg, #719544 ,#1F3206);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-register p{
+    margin: 0%;
+    padding-top: 24px;
+}
+
+/*CÓDIGO DE ESTILO DO INPUT COM SOMBREADO DENTRO*/
+    .input-inside{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        padding-bottom: 32px;
+    }
+
+    .input-inside label{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 8px;
+        /*Estilizar o gradiente na fonte*/
+        background-image: linear-gradient(135deg, #719544 ,#1F3206);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .input-inside input{
+        width: 323px;
+        height: 67px;
+        left: 807px;
+        top: 398px;
+
+        background: #ECF0F3;
+        border: none;
+        box-shadow: inset -8px -8px 8px rgba(255, 255, 255, 0.56), inset 8px 8px 8px rgba(91, 91, 98, 0.2);
+        border-radius: 16px;
+    }
+
+.register-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1120px;
+    padding: 0%;
+    margin: 0%
+}
+
+.register-form .submit{
+    width: 312px;
+    height: 48px;
+    left: 808px;
+    top: 621px;
+    border: none;
+    
+    color:#ECF0F3;
+    font-size: 20px;
+    font-weight: 700;
+
+    /*Cor e forma do botão*/
+    background: linear-gradient(117.01deg, #719544 2.25%, #1F3206 117.84%);
+    box-shadow: -8px -8px 16px rgba(255, 255, 255, 0.64), 8px 8px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;        
+}
+
+.finish-register{
+    padding-bottom: 24px;
+}
