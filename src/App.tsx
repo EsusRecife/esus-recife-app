@@ -67,10 +67,9 @@ function App() {
   return (
     <AuthProvider>
     <>
-      <FormLogin></FormLogin>
       {/* <FormRegister></FormRegister> */}
       {/* <RegisterSplash></RegisterSplash>*/}
-      {/* <RouterProvider router={router} /> */}
+      <RouterProvider router={router} />
       
       {/* <div>
       <button onClick={fetchToken}>Fetch Data</button>

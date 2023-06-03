@@ -1,5 +1,7 @@
 body{
     background: linear-gradient(116.01deg, #719544 11.55%, #1F3206 128.11%);
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 .firstlayer{
