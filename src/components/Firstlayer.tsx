@@ -3,7 +3,13 @@ import {FormLogin} from './FormLogin';
 import { FormSenha } from './FormLogin';
 import WelcomeMessage from './WelcomeMessage';
 import { FormRegister } from './FormLogin';
+import { Dashboard
+ } from './Dashboard';
+ import {FormsColeta} from './FormsColeta'
 import { Logo } from './Logo';
+import { Ajuda } from './Ajuda';
+
+
 
 export function LoginSplash() {
     return(
@@ -54,4 +60,50 @@ export function RegisterSplash() {
         </>
     )
 }
+
+export function DashboardScreen() {
+    return(
+        <>
+            <div className='dashboard'>
+
+                <div >
+                    <Dashboard></Dashboard>
+                </div>
+
+            </div>
+        </>
+    )
+}
+
+export function FormsColetaScreen() {
+    return(
+        <>
+            <div className='first-layer'>
+
+                <div >
+                    <FormsColeta></FormsColeta>
+                </div>
+
+            </div>
+        </>
+    )
+}
+
+export function AjudaScreen() {
+    return(
+        <>
+            <div className='ajuda'>
+
+                <div >
+                    <Ajuda></Ajuda>
+                </div>
+
+            </div>
+        </>
+    )
+}
+
+
+
+
 
