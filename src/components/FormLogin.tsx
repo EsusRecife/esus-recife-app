@@ -1,48 +1,103 @@
+import logo from '../assets/logo-esus.svg'
 import './styles/formlogin.css'
-// import logo from '../assets/logo-esus.svg';
-
+import App from '../App'
+import axios from "axios"
+import { useState } from "react"
 
 export function FormLogin() {
-
+    const [auth, setToken] = useState<string>("");
+    const [login, setLogin] = useState<string>("");
+    const [senha, setPassword] = useState<string>("");
+  
+    const handleChangeLogin = (event: React.ChangeEvent<HTMLInputElement>) => {
+      setLogin(event.target.value);
+    };
+  
+    const handleChangePassword = (event: React.ChangeEvent<HTMLInputElement>) => {
+      setPassword(event.target.value);
+    };
+  
+    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+      event.preventDefault();
+      fetchToken();
+    };
+  
+    const fetchToken = async () => {
+      try {
+        let headersList = {
+          Accept: "*/*",
+          "Content-Type": "application/json",
+        };
+  
+        let bodyContent = JSON.stringify({
+          inepCod: login,
+          password: senha,
+        });
+  
+        let reqOptions = {
+          url: "https://esus-recife-api.cyclic.app/auth/login",
+          method: "POST",
+          headers: headersList,
+          data: bodyContent,
+        };
+  
+        const response = await axios.request(reqOptions);
+        console.log(response);
+        setToken(response.data.access_token);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+  
     return (
       <>
         <div className="forms">
-            
-            <header className="titletile">
-                <p>Login</p>
-                <div>
-                    
-                </div>
-            </header>
-
-            <form>
-
-                <div className="inputtile">
-                    <label htmlFor="codigo">Código da escola</label>
-                    <input type="text" name="codigo"  />
-                </div>
-
-                <div className="inputtile">
-                    <label htmlFor="senha">Senha</label>
-                    <input type="password" name="senha"  />
-                </div>
-
-                <input type="submit" value={'Executar login'} className='submit'/>
-
-                <a href="" className='redirectpassword'>Esqueceu sua senha?</a>
-
-                <div className="footer">
-                    <p>Novo por aqui?</p>
-                    <a href="">Faça um cadastro</a>
-                </div>
-
-            </form>
+          <header className="titletile">
+            <p>Login</p>
+          </header>
+  
+          <form>
+            <div className="inputtile">
+              <label htmlFor="codigo">Código da escola</label>
+              <input
+                type="text"
+                name="codigo"
+                id="codigo-inep-login"
+                onChange={handleChangeLogin}
+                value={login}
+              />
+            </div>
+  
+            <div className="inputtile">
+              <label htmlFor="senha">Senha</label>
+              <input
+                type="password"
+                name="senha"
+                id="senha-login"
+                onChange={handleChangePassword}
+                value={senha}
+              />
+            </div>
+  
+            <button type="submit" className="submit" onClick={handleClick}>
+              Executar login
+            </button>
+  
+            <a href="" className="redirectpassword">
+              Esqueceu sua senha?
+            </a>
+  
+            <div className="footer">
+              <p>Novo por aqui?</p>
+              <a href="">Faça um cadastro</a>
+            </div>
+          </form>
         </div>
       </>
-    )
+    );
   }
 
-  export function FormSenha() {
+export function FormSenha() {
 
     return (
       <>
@@ -59,7 +114,7 @@ export function FormLogin() {
                     <input type="text" name="email"  />
                 </div>
 
-                <input type="submit" value={'Executar login'} className='submit'/>
+                <button type="submit"  className='submit'>Executar Login</button>
 
                 <div className="footer2">
                     <p>Não possuí mais acesso ao email?</p>
@@ -129,7 +184,7 @@ export function FormLogin() {
             </div>
 
             <div className='finish-register'>
-                <input type="submit" value={'Finalizar cadastro'} className='submit'/>
+                <button type="submit"  className='submit'>Finalizar Cadastro</button>
             </div>
             
 
@@ -140,3 +195,4 @@ export function FormLogin() {
       </>
     )
   }
+  
