@@ -1,4 +1,4 @@
-// import logo from '../assets/logo-esus.svg'
+import logo from '../assets/logo-esus.svg'
 import "./styles/welcomemessage.css"
 
 function WelcomeMessage() {
@@ -9,7 +9,7 @@ function WelcomeMessage() {
 
                 <div className='esus-logo-name'>
                     <div>
-                        {/* <img src={logo} alt="Logo-Esus" /> */}
+                        <img src={logo} alt="Logo-Esus" />
                     </div>
                     <p>Esus Recife</p>
                 </div>
