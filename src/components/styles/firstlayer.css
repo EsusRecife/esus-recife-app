@@ -1,5 +1,7 @@
 body{
     background: linear-gradient(116.01deg, #719544 11.55%, #1F3206 128.11%);
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 .firstlayer{
@@ -8,8 +10,8 @@ body{
     align-items: center;
     background-color: #ECF0F3;
     border-radius: 32px;
-    max-width: 1120px;
-    max-height: 704px;
+    width: 1400px;
+    height: 900px;
 
     box-shadow: 24px 24px 48px rgba(255, 255, 255, 0.12), -24px -24px 48px rgba(0, 0, 0, 0.25);
 }

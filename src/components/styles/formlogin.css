@@ -182,10 +182,11 @@ html, body{
     }
 
     .input-inside label{
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
         padding-bottom: 8px;
+
         /*Estilizar o gradiente na fonte*/
         background-image: linear-gradient(135deg, #719544 ,#1F3206);
         -webkit-background-clip: text;
@@ -194,12 +195,9 @@ html, body{
     }
 
     .input-inside input{
-        width: 323px;
-        height: 67px;
-        left: 807px;
-        top: 398px;
-
-        background: #ECF0F3;
+        width: 320px;
+        height: 60px;
+        background: #e7e9eb;
         border: none;
         box-shadow: inset -8px -8px 8px rgba(255, 255, 255, 0.56), inset 8px 8px 8px rgba(91, 91, 98, 0.2);
         border-radius: 16px;
